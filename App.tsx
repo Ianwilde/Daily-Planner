@@ -8,21 +8,18 @@ import AIPlanner from './components/AIPlanner';
 import CalendarView from './components/CalendarView';
 
 const INITIAL_TASKS: Task[] = [
-  { id: '1', title: 'Morning Yoga', category: 'health', completed: true, time: '07:30', priority: 'medium' },
-  { id: '2', title: 'Product Launch Meeting', category: 'work', completed: false, time: '10:00', priority: 'high' },
+  { id: '1', title: 'Exercise', category: 'health', completed: true, time: '07:30', priority: 'medium' },
+  { id: '2', title: 'Go to Class', category: 'School', completed: false, time: '1:00:00', priority: 'high' },
   { id: '3', title: 'Grocery Shopping', category: 'personal', completed: false, time: '17:00', priority: 'low' },
 ];
 
 const INITIAL_HABITS: Habit[] = [
-  { id: 'h1', title: 'Read 20 mins', streak: 5, completedToday: false, color: '#6366f1' },
-  { id: 'h2', title: 'No sugar', streak: 12, completedToday: true, color: '#f43f5e' },
-  { id: 'h3', title: 'Meditate', streak: 3, completedToday: false, color: '#10b981' },
+  { id: 'h1', title: 'Scriture Study', streak: 0, completedToday: false, color: '#6366f1' },
+  { id: 'h2', title: 'Pray', streak: 0, completedToday: true, color: '#f43f5e' },
+  { id: 'h3', title: 'Home work', streak: 0, completedToday: false, color: '#10b981' },
 ];
 
 const INITIAL_EVENTS: CalendarEvent[] = [
-  { id: 'e1', title: 'Deep Work Session', startHour: 9, category: 'work' },
-  { id: 'e2', title: 'Team Sync', startHour: 11, category: 'work' },
-  { id: 'e3', title: 'Evening Walk', startHour: 18, category: 'personal' },
 ];
 
 function App() {
