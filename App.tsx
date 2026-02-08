@@ -8,14 +8,11 @@ import AIPlanner from './components/AIPlanner';
 import CalendarView from './components/CalendarView';
 
 const INITIAL_TASKS: Task[] = [
-  { id: '1', title: 'Exercise', category: 'health', completed: true, time: '07:30', priority: 'medium' },
-  { id: '2', title: 'Go to Class', category: 'School', completed: false, time: '1:00:00', priority: 'high' },
-  { id: '3', title: 'Grocery Shopping', category: 'personal', completed: false, time: '17:00', priority: 'low' },
 ];
 
 const INITIAL_HABITS: Habit[] = [
   { id: 'h1', title: 'Scriture Study', streak: 0, completedToday: false, color: '#6366f1' },
-  { id: 'h2', title: 'Pray', streak: 0, completedToday: true, color: '#f43f5e' },
+  { id: 'h2', title: 'Pray', streak: 0, completedToday: false, color: '#f43f5e' },
   { id: 'h3', title: 'Home work', streak: 0, completedToday: false, color: '#10b981' },
 ];
 
@@ -157,7 +154,7 @@ function App() {
             active={activeTab === 'settings'} 
             onClick={() => setActiveTab('settings')} 
             icon={<Icons.Settings />} 
-            label="Meta" 
+            label="Settings" 
           />
         </div>
       </nav>
